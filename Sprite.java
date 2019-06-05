@@ -1,4 +1,5 @@
 import java.awt.Image;
+import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
 
@@ -47,6 +48,11 @@ public class Sprite {
 	
 	public void setVisible(Boolean visible) {
 		this.visible = visible;
+	}
+	
+	//rectangle bounds needed for collision detection!
+	public Rectangle getBounds() {
+		return new Rectangle(x, y, width, height);
 	}
 
 }
