@@ -10,13 +10,13 @@ public class Application extends JFrame{
 	}
 	
 	private void initUI() {
-		add(new Board5());//entry point of game
+		add(new SpaceBoard());//entry point of game
 		
-		pack();//puts the board in center of JFrame container, THIS IS FOR IMAGES
+		//pack();//puts the board in center of JFrame container, THIS IS FOR IMAGES
 		
-		//setSize(330, 330);//put the board in center of JFrame container, THIS IS FOR PAINTED
+		setSize(400, 300);//put the board in center of JFrame container, THIS IS FOR PAINTED
 		
-		setTitle("Star");//sets title of frame
+		setTitle("Moving Sprite");//sets title of frame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exits the screen when closed
 		setLocationRelativeTo(null);
 	}
